@@ -21,6 +21,11 @@ namespace ML
 		return out;
 	}
 
+	std::vector<double> LinearLayer::operator()(const std::vector<double>& x) const
+	{
+		return forward(x);
+	}
+
 	std::ostream& operator<<(std::ostream& out, const LinearLayer& lin)
 	{
 		for (auto it{ lin.m_neurons.begin() }; it != lin.m_neurons.end(); ++it)

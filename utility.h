@@ -8,6 +8,7 @@ namespace ML
 	namespace util
 	{
 		double sigmoid(double x);
+		std::vector<double> sigmoid(std::vector<double>& x);
 
 		template<typename T>
 		double dot(const T& t1, const T& t2)

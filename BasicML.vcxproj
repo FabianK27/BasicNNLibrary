@@ -145,12 +145,14 @@
   <ItemGroup>
     <ClCompile Include="LinearLayer.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Model.cpp" />
     <ClCompile Include="neuron.cpp" />
     <ClCompile Include="utility.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="constants.h" />
     <ClInclude Include="LinearLayer.h" />
+    <ClInclude Include="Model.h" />
     <ClInclude Include="neuron.h" />
     <ClInclude Include="utility.h" />
   </ItemGroup>

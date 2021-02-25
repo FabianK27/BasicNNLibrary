@@ -27,6 +27,7 @@ namespace ML
 			uniformRandomInit(-RANDOMINIT_LIMIT, RANDOMINIT_LIMIT);
 		}
 
+	public:
 		// setters and getters
 		const std::vector<double>& getWeights() const { return m_weights; }
 		void setWeigthtatIndex(int index, double w) { m_weights.at(index) = w; }
@@ -37,6 +38,7 @@ namespace ML
 		}
 		double getBias() const { return m_bias; }
 		void setBias(double b) { m_bias = b; }
+	private:
 		// ML utility
 		double forward(const std::vector<double>& x) const;
 
