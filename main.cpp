@@ -4,6 +4,7 @@
 #include<vector>
 #include<exception>
 #include"Model.h"
+#include"DataLoader.h"
 
 using MLVec = std::vector<double>;
 
@@ -32,8 +33,12 @@ int main()
 	{
 		MyBasicModel model;
 		auto out = model.forward({ 1.0,2.0,3.0 });
+		MLVec gt{ {0.0, 0.0, 1.0} };
 		for (const auto& element : out)
 			std::cout << "Out tensor element: " << element << ", ";
+		std::cout << "\nLoss: " << ML::util::MSELoss_SingleEvent<MLVec>(out, gt) << '\n';
+
+		ML::DataLoader<MLVec> data{ gt, 1, 1, false };
 	}
 	catch (const std::exception& exc)
 	{

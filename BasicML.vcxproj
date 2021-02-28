@@ -143,6 +143,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DataLoader.cpp" />
     <ClCompile Include="LinearLayer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Model.cpp" />
@@ -151,6 +152,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="constants.h" />
+    <ClInclude Include="DataLoader.h" />
     <ClInclude Include="LinearLayer.h" />
     <ClInclude Include="Model.h" />
     <ClInclude Include="neuron.h" />
